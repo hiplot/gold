@@ -1,7 +1,12 @@
 name: Due Date Workflow
 on:
-  schedule:
-    - cron:  '0 * * * *'
+  issues:
+    types: [opened, edited, milestoned]
+  issue_comment:
+    types: [created, deleted]
+# on:
+#   schedule:
+#     - cron:  '0 * * * *'
 jobs:
   Ubuntu:
     name: Add labels to issues
