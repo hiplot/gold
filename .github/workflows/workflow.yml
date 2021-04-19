@@ -2,8 +2,6 @@ name: Due Date Workflow
 on:
   issues:
     types: [opened, edited, milestoned]
-  issue_comment:
-    types: [created, deleted]
 # on:
 #   schedule:
 #     - cron:  '0 * * * *'
